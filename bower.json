@@ -1,0 +1,24 @@
+{
+  "name": "piroll-design",
+  "description": "design-agency",
+  "main": "index.html",
+  "authors": [
+    "Vlad Tepes <vg.email.2@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "design"
+  ],
+  "homepage": "https://github.com/VGMQT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "svg4everybody": "^2.1.9",
+    "jquery": "^3.3.1"
+  }
+}
