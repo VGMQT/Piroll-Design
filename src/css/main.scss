@@ -1,4 +1,6 @@
 //vars
+$accentcolor: #10c9c3;
+$desc-color: #787878;
 
 //layout
 @import "_misc/normalize";
@@ -6,6 +8,13 @@
 @import "_misc/mixins";
 @import "_misc/adjustment";
 
+//plugins
+@import "plugins/jquery.fullpage";
+
 //elements
+@import "elements/elements";
+@import "elements/header";
 
 //sections
+@import "homepage/sections/intro";
+@import "homepage/sections/about";

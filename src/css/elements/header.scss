@@ -1,0 +1,47 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: rem(200px);
+}
+
+.logo{
+  position: relative;
+  display: block;
+  transition: all .3s;
+  &:hover{
+    transform: rotate(15deg);
+  }
+  &:active{
+    transform: none;
+  }
+  img{
+    @extend %img;
+  }
+}
+
+.nav{
+  display: flex;
+  .active{
+    color: $accentcolor;
+  }
+}
+
+.nav__link{
+  @include font();
+  display: block;
+  margin-right: rem(30px);
+  font-size: rem(12px);
+  text-transform: uppercase;
+  color: #000000;
+  transition: all .3s;
+  &:last-child{
+    margin-right: 0;
+  }
+  &:hover{
+    transform: rotate(15deg);
+  }
+  &:active{
+    transform: none;
+  }
+}

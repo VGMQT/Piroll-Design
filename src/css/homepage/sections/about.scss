@@ -1,0 +1,43 @@
+.about{
+  text-align: center;
+  background: #ffffff;
+}
+
+.about__text{
+  padding: rem(90px) 0;
+}
+
+.about__text-inner{
+  display: inline-block;
+  max-width: rem(590px);
+  .title{
+    font-size: rem(30px);
+  }
+  .desc{
+    font-size: rem(16px);
+    margin-bottom: rem(30px);
+  }
+}
+
+.signature{
+  img{
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.about__skills{
+  padding: rem(90px) 0;
+}
+
+.about__skills-inner{
+  width: 50%;
+  text-align: center;
+}
+
+.skills-wrapper{
+  display: inline-block;
+  max-width: 80%;
+  text-align: left;
+}
