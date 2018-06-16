@@ -35,7 +35,7 @@ const svgmin = require('gulp-svgmin');
 const svgspriteDest = {
     mode: {
         symbol: {
-            sprite: "../socials-sprite.svg"
+            sprite: "../svg-sprite.svg"
         }
     }
 };

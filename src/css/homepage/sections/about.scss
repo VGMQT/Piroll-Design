@@ -10,9 +10,6 @@
 .about__text-inner{
   display: inline-block;
   max-width: rem(590px);
-  .title{
-    font-size: rem(30px);
-  }
   .desc{
     font-size: rem(16px);
     margin-bottom: rem(30px);
@@ -27,17 +24,111 @@
   }
 }
 
+//----------------------<<skills>>----------------------\\
 .about__skills{
-  padding: rem(90px) 0;
+  .container{
+    display: flex;
+  }
 }
 
 .about__skills-inner{
   width: 50%;
+  padding: rem(90px) 0;
   text-align: center;
+  background: #ffffff;
 }
+
 
 .skills-wrapper{
   display: inline-block;
-  max-width: 80%;
+  width: 80%;
   text-align: left;
+}
+
+.skills__item{
+  @include font();
+  position: relative;
+  margin-bottom: rem(20px);
+  font-size: rem(12px);
+  color: #000000;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.skills__text{
+  padding: rem(20px) 0;
+}
+
+.skills__name{
+  margin-right: rem(20px);
+  text-transform: uppercase;
+}
+
+.skills__value{
+  &:after{
+    content: '%';
+  }
+}
+
+.skills__progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 3px;
+}
+
+.skills__progress[value]::-webkit-progress-bar {
+  background-color: #d8d8d8;
+}
+
+.skills__progress[value]::-webkit-progress-value {
+  background: $accentcolor;
+}
+
+.about__skills-bg{
+  width: 50%;
+  background: url("../assets/img/bg/bg-about-skills.jpg") top no-repeat;
+  background-size: cover;
+}
+
+//----------------------<<numbers>>----------------------\\
+.about__numbers{
+  padding: rem(90px) 0;
+  background: $accentcolor;
+}
+
+.numbers__list{
+  @include font(medium);
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  color: #ffffff;
+}
+
+.numbers__item{
+  display: flex;
+  align-items: center;
+}
+
+.numbers__icon{
+  width: rem(40px);
+  height: rem(40px);
+  margin-right: rem(20px);
+}
+
+.numbers__svg{
+  width: 100%;
+  height: 100%;
+  fill: #ffffff;
+}
+
+.numbers__total{
+  font-size: rem(18px);
+}
+
+.numbers__desc{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: rem(12px);
 }
