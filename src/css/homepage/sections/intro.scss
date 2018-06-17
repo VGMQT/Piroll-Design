@@ -2,18 +2,21 @@
   background: url("../assets/img/bg/bg-intro.jpg") center no-repeat;
   background-size: cover;
   .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     height: 100%;
     padding-top: rem(40px);
   }
 }
 
-.intro__main{
-  display: flex;
+.intro__content{
+  display: inline-flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
-.intro__main-text{
+.intro__content-text{
   display: inline-block;
   max-width: rem(480px);
   margin-bottom: rem(40px);

@@ -12,7 +12,9 @@ $(document).ready(function () {
             anchors:['first', 'second', 'third'],
             navigation: false,
             scrollBar: false,
-            scrollOverflow: true
+            autoScrolling: false,
+            fitToSection: true,
+            fitToSectionDelay: 1000
 
         });
     }());

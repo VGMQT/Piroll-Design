@@ -1,3 +1,4 @@
+//----------------------<<text>>----------------------\\
 .about{
   text-align: center;
   background: #ffffff;
@@ -7,12 +8,12 @@
   padding: rem(90px) 0;
 }
 
-.about__text-inner{
+.about__text-content{
   display: inline-block;
   max-width: rem(590px);
   .desc{
-    font-size: rem(16px);
     margin-bottom: rem(30px);
+    font-size: rem(16px);
   }
 }
 
@@ -26,16 +27,17 @@
 
 //----------------------<<skills>>----------------------\\
 .about__skills{
+  background: url("../assets/img/bg/bg-about-skills.jpg") center no-repeat fixed;
+  background-size: cover;
   .container{
     display: flex;
   }
 }
 
-.about__skills-inner{
+.about__skills-content{
   width: 50%;
   padding: rem(90px) 0;
   text-align: center;
-  background: #ffffff;
 }
 
 
@@ -71,25 +73,14 @@
   }
 }
 
-.skills__progress {
-  -webkit-appearance: none;
-  appearance: none;
+.skills__progress{
   width: 100%;
   height: 3px;
-}
-
-.skills__progress[value]::-webkit-progress-bar {
   background-color: #d8d8d8;
-}
-
-.skills__progress[value]::-webkit-progress-value {
-  background: $accentcolor;
-}
-
-.about__skills-bg{
-  width: 50%;
-  background: url("../assets/img/bg/bg-about-skills.jpg") top no-repeat;
-  background-size: cover;
+  div{
+    height: 3px;
+    background-color: $accentcolor;
+  }
 }
 
 //----------------------<<numbers>>----------------------\\
@@ -128,7 +119,9 @@
 }
 
 .numbers__desc{
-  text-transform: uppercase;
-  letter-spacing: 1px;
   font-size: rem(12px);
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
+
+//----------------------<<portfolio>>----------------------\\
