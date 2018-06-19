@@ -8,6 +8,9 @@ $desc-color: #787878;
 @import "_misc/mixins";
 @import "_misc/adjustment";
 
+//plugins
+@import "plugins/nanogallery2.min";
+
 //elements
 @import "elements/elements";
 @import "elements/header";
