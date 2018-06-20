@@ -125,37 +125,29 @@
 }
 
 //----------------------<<portfolio>>----------------------\\
-.thumbs__list{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.thumbs__link{
-  position: relative;
+.portfolio__svg{
   display: block;
-  width: rem(300px);
-  height: rem(300px);
-  img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    transform: translate(-50%, -50%);
+  width: rem(80px);
+  height: rem(80px);
+  fill: #ffffff;
+  transition: all .3s;
+  &:hover{
+    fill: $accentcolor;
   }
 }
 
-.portfolio__svg{
-  display: block;
-  width: 80px;
-  height: 80px;
-  fill: #ffffff;
+.portfolio__svg_size{
+  width: rem(50px);
+  height: rem(40px);
 }
 
-.portfolio__svg_size{
-  width: 50px;
-  height: 40px;
+.portfolio__svg-moreBtn{
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: rem(3px);
+  width: rem(25px);
+  height: rem(25px);
+  fill: #8e8e8e;
+  transition: all .3s;
 }
+
