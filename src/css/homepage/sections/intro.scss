@@ -1,7 +1,8 @@
-.intro{
+.intro {
+  text-align: left;
   background: url("../assets/img/bg/bg-intro.jpg") center no-repeat;
   background-size: cover;
-  .container{
+  .container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -10,17 +11,17 @@
   }
 }
 
-.intro__content{
+.intro__content {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.intro__content-text{
+.intro__content-text {
   display: inline-block;
   max-width: rem(480px);
   margin-bottom: rem(40px);
-  .title{
+  .title {
     font-size: rem(38px);
   }
 }

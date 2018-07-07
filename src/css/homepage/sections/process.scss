@@ -1,0 +1,51 @@
+.video {
+  padding: rem(90px) 0;
+
+  .desc {
+    max-width: rem(500px);
+    margin: 0 auto rem(55px);
+  }
+
+  iframe {
+    width: 100%;
+    height: rem(500px);
+  }
+}
+
+.pros {
+  padding: rem(100px) 0 rem(40px);
+  background: $prosbg;
+}
+
+.pros__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.pros__item {
+  @include trans();
+  max-width: rem(250px);
+  margin-bottom: rem(60px);
+
+  .title {
+    margin-bottom: rem(10px);
+    font-size: rem(12px);
+  }
+
+  .desc {
+    font-size: rem(16px);
+  }
+
+  &:hover {
+    transform: rotate(-15deg);
+  }
+}
+
+.pros__svg {
+  width: rem(42px);
+  height: rem(42px);
+  margin-bottom: rem(10px);
+  fill: $prossvg;
+}

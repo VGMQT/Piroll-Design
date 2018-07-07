@@ -45,8 +45,26 @@
 }
 
 //----------------------<<images>>----------------------\\
-%img{
+%img {
   display: block;
   max-width: 100%;
   max-height: 100%;
+}
+
+//----------------------<<transition>>----------------------\\
+@mixin trans($duration: .3s) {
+  transition: all $duration;
+}
+
+//----------------------<<fonts>>----------------------\\
+@mixin font($style: bold) {
+  @if $style == bold {
+    font-family: "montserratbold";
+  }
+  @if $style == medium {
+    font-family: "montserratmedium";
+  }
+  @if $style == reg {
+    font-family: "nunito_sansregular";
+  }
 }

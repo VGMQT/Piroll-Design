@@ -1,32 +1,37 @@
-.title{
+.section {
+  background: $bg-color;
+  text-align: center;
+}
+
+.title {
   @include font();
   margin-bottom: rem(20px);
   font-size: rem(30px);
   color: #000000;
 }
 
-.desc{
+.desc {
   @include font(reg);
   font-size: rem(18px);
   color: $desc-color;
 }
 
-.btn{
+.btn {
   @include font();
   display: inline-block;
   font-size: rem(12px);
   text-transform: uppercase;
   background: #000000;
   transition: all .3s;
-  &:hover{
+  &:hover {
     background: $accentcolor;
   }
-  &:active{
+  &:active {
     transform: scale(.98);
   }
 }
 
-.btn__link{
+.btn__link {
   display: block;
   padding: rem(20px) rem(45px);
   color: #ffffff;

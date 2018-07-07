@@ -1,21 +1,19 @@
-//vars
-$accentcolor: #10c9c3;
-$desc-color: #787878;
-
-//layout
+//----------------------<<misc>>----------------------\\
 @import "_misc/normalize";
 @import "_misc/fonts";
+@import "_misc/variables";
 @import "_misc/mixins";
 @import "_misc/adjustment";
 
-//plugins
+//----------------------<<plugins>>----------------------\\
 @import "plugins/nanogallery2.min";
 @import "plugins/resets";
 
-//elements
+//----------------------<<elements>>----------------------\\
 @import "elements/elements";
-@import "elements/header";
 
-//sections
+//----------------------<<sections>>----------------------\\
+@import "homepage/sections/header";
 @import "homepage/sections/intro";
 @import "homepage/sections/about";
+@import "homepage/sections/process";

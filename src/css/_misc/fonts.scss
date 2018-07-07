@@ -1,47 +1,35 @@
 @font-face {
-  font-family: 'montserratmedium';
-  src: url('../assets/fonts/montserrat-medium-webfont.eot');
-  src: url('../assets/fonts/montserrat-medium-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../assets/fonts/montserrat-medium-webfont.woff2') format('woff2'),
-  url('../assets/fonts/montserrat-medium-webfont.woff') format('woff'),
-  url('../assets/fonts/montserrat-medium-webfont.ttf') format('truetype'),
-  url('../assets/fonts/montserrat-medium-webfont.svg#montserratmedium') format('svg');
+  font-family: "montserratmedium";
+  src: url("../assets/fonts/montserrat-medium-webfont.eot");
+  src: url("../assets/fonts/montserrat-medium-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/montserrat-medium-webfont.woff2") format("woff2"),
+  url("../assets/fonts/montserrat-medium-webfont.woff") format("woff"),
+  url("../assets/fonts/montserrat-medium-webfont.ttf") format("truetype"),
+  url("../assets/fonts/montserrat-medium-webfont.svg#montserratmedium") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'montserratbold';
-  src: url('../assets/fonts/montserrat-bold-webfont.eot');
-  src: url('../assets/fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../assets/fonts/montserrat-bold-webfont.woff2') format('woff2'),
-  url('../assets/fonts/montserrat-bold-webfont.woff') format('woff'),
-  url('../assets/fonts/montserrat-bold-webfont.ttf') format('truetype'),
-  url('../assets/fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+  font-family: "montserratbold";
+  src: url("../assets/fonts/montserrat-bold-webfont.eot");
+  src: url("../assets/fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/montserrat-bold-webfont.woff2") format("woff2"),
+  url("../assets/fonts/montserrat-bold-webfont.woff") format("woff"),
+  url("../assets/fonts/montserrat-bold-webfont.ttf") format("truetype"),
+  url("../assets/fonts/montserrat-bold-webfont.svg#montserratbold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'nunito_sansregular';
-  src: url('../assets/fonts/nunitosans-regular-webfont.eot');
-  src: url('../assets/fonts/nunitosans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../assets/fonts/nunitosans-regular-webfont.woff2') format('woff2'),
-  url('../assets/fonts/nunitosans-regular-webfont.woff') format('woff'),
-  url('../assets/fonts/nunitosans-regular-webfont.ttf') format('truetype'),
-  url('../assets/fonts/nunitosans-regular-webfont.svg#nunito_sansregular') format('svg');
+  font-family: "nunito_sansregular";
+  src: url("../assets/fonts/nunitosans-regular-webfont.eot");
+  src: url("../assets/fonts/nunitosans-regular-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/nunitosans-regular-webfont.woff2") format("woff2"),
+  url("../assets/fonts/nunitosans-regular-webfont.woff") format("woff"),
+  url("../assets/fonts/nunitosans-regular-webfont.ttf") format("truetype"),
+  url("../assets/fonts/nunitosans-regular-webfont.svg#nunito_sansregular") format("svg");
   font-weight: normal;
   font-style: normal;
-}
-
-@mixin font($style: bold) {
-  @if $style == bold {
-    font-family: 'montserratbold';
-  }
-  @if $style == medium {
-    font-family: 'montserratmedium';
-  }
-  @if $style == reg {
-    font-family: 'nunito_sansregular';
-  }
 }

@@ -1,4 +1,4 @@
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,29 +6,29 @@
   margin-bottom: rem(200px);
 }
 
-.logo{
+.logo {
   position: relative;
   display: block;
   transition: all .3s;
-  &:hover{
+  &:hover {
     transform: rotate(15deg);
   }
-  &:active{
+  &:active {
     transform: none;
   }
-  img{
+  img {
     @extend %img;
   }
 }
 
-.nav{
+.nav {
   display: flex;
-  .active{
+  .active {
     color: $accentcolor;
   }
 }
 
-.nav__link{
+.nav__link {
   @include font();
   display: block;
   margin-right: rem(30px);
@@ -36,13 +36,13 @@
   text-transform: uppercase;
   color: #000000;
   transition: all .3s;
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
-  &:hover{
+  &:hover {
     transform: rotate(15deg);
   }
-  &:active{
+  &:active {
     transform: none;
   }
 }
