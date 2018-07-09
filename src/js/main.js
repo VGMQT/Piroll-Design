@@ -10,7 +10,7 @@ $(document).ready(function () {
         navigation: false,
         scrollBar: false,
         autoScrolling: false,
-        fitToSection: true,
+        fitToSection: false,
         fitToSectionDelay: 1000
 
     });

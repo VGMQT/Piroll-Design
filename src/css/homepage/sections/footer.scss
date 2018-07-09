@@ -1,0 +1,61 @@
+.footer {
+  @include font(reg);
+  padding: rem(100px) rem(90px);
+  color: rgba($bg-color, .7);
+  background: $title;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__copyright {
+  .title {
+    color: $bg-color;
+  }
+
+  p {
+    max-width: rem(245px);
+  }
+}
+
+.contacts__link {
+  @include trans();
+  display: block;
+  color: rgba($bg-color, .7);
+
+  &:hover {
+    color: $accentcolor;
+  }
+
+  &:active {
+    color: $bg-color;
+  }
+}
+
+.footer__menu {
+  display: flex;
+}
+
+.footer__list {
+  margin-right: rem(55px);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__link {
+  @include trans();
+  display: block;
+  color: rgba($bg-color, .7);
+
+  &:hover {
+    color: $accentcolor;
+  }
+
+  &:active {
+    color: $bg-color;
+  }
+}

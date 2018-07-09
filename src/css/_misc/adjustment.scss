@@ -1,6 +1,6 @@
 //----------------------<<vars>>----------------------\\
 $container-width: 1200px;
-$footer-height: 100px;
+$footer-height: 285px;
 
 //----------------------<<css>>----------------------\\
 html {
@@ -102,9 +102,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 footer {
-  position: relative;
-  min-width: $container-width + 20;
-  width: 100%;
-  height: $footer-height;
-  margin-top: -$footer-height;
+  //position: relative;
+  //min-width: $container-width + 20;
+  //width: 100%;
+  //height: $footer-height;
+  //margin-top: -$footer-height;
 }
