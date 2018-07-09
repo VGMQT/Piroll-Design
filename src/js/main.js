@@ -6,7 +6,7 @@ $(document).ready(function () {
     //----------------------<<one page scroll>>----------------------\\
     $('#fullpage').fullpage({
 
-        anchors:['first', 'second', 'third'],
+        anchors:['first', 'second', 'third', 'fourth'],
         navigation: false,
         scrollBar: false,
         autoScrolling: false,
@@ -86,5 +86,15 @@ $(document).ready(function () {
         });
 
     }());
+
+    //----------------------<<swiper>>----------------------\\
+    const mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        }
+    });
 
 });
