@@ -21,7 +21,7 @@
   display: inline-block;
   font-size: rem(12px);
   text-transform: uppercase;
-  background: #000000;
+  background: $title;
   transition: all .3s;
   &:hover {
     background: $accentcolor;
