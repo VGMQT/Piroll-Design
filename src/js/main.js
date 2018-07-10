@@ -34,6 +34,22 @@ $(document).ready(function () {
         }
     }());
 
+    //----------------------<<parallax>>----------------------\\
+    function parallax() {
+        var $parallax = document.getElementById("parallax");
+
+        var yPos = window.pageYOffset / $parallax.dataset.speed;
+        yPos = -yPos;
+
+        var coords = '0% '+ yPos + 'px';
+
+        $parallax.style.backgroundPosition = coords;
+    }
+
+    window.addEventListener("scroll", function(){
+        parallax();
+    });
+
     //----------------------<<gallery>>----------------------\\
     (function () {
 
