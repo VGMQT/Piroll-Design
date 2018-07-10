@@ -4,6 +4,17 @@
   align-items: center;
   width: 100%;
   margin-bottom: rem(200px);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header_padding-margin {
+  padding: rem(35px) 0;
+  margin: 0;
 }
 
 .logo {

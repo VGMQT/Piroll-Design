@@ -1,0 +1,33 @@
+.main__text-wrapper {
+  background: $prosbg;
+}
+
+.main__text {
+  max-width: rem(520px);
+  padding: rem(100px) 0;
+  margin: auto;
+  text-align: center;
+}
+
+.home-portfolio {
+  display: flex;
+}
+
+.home-portfolio__link {
+  position: relative;
+  display: block;
+  width: rem(300px);
+  height: rem(300px);
+
+  img {
+    @extend %img;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.home-portfolio__svg {
+  display: none;
+}
