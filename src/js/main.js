@@ -15,6 +15,25 @@ $(document).ready(function () {
 
     });
 
+    //----------------------<<skills>>----------------------\\
+    (function () {
+
+        const value = $(".skills__value");
+
+        for (let i = 0; i < value.length; i++) {
+
+            let object = value.eq(i);
+            let size = object[0].innerHTML;
+            const container = object.closest(".skills__item");
+            const achievedBar = container.find(".skills__progress-achieved");
+
+            achievedBar.css({
+                width : size + "%"
+            });
+
+        }
+    }());
+
     //----------------------<<gallery>>----------------------\\
     (function () {
 
