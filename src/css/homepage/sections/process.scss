@@ -1,3 +1,4 @@
+//----------------------<<video>>----------------------\\
 .video {
   padding: rem(90px) 0;
 
@@ -12,6 +13,7 @@
   }
 }
 
+//----------------------<<pros>>----------------------\\
 .pros {
   padding: rem(100px) 0 rem(40px);
   background: $prosbg;
@@ -50,17 +52,19 @@
   fill: $prossvg;
 }
 
+//----------------------<<opinions>>----------------------\\
 .opinions {
   background: $accentcolor;
+  cursor: pointer;
 }
 
 .slide__inner {
   @include font(bold);
-  width: rem(850px);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: rem(850px);
   color: $bg-color;
 
   p {
@@ -79,6 +83,7 @@
   }
 }
 
+//----------------------<<logos>>----------------------\\
 .logos {
   display: flex;
   justify-content: space-around;
