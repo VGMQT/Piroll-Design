@@ -1,5 +1,6 @@
 .project {
   background: $prosbg;
+
   .container {
     .desc {
       max-width: rem(600px);
@@ -16,10 +17,6 @@
   width: rem(700px);
   margin: auto;
 
-  textarea {
-    min-height: rem(200px);
-  }
-
   .btn {
     padding: rem(20px) rem(35px);
     outline: none;
@@ -32,12 +29,17 @@
       background: $title;
     }
   }
+
+  textarea {
+    min-height: rem(200px);
+  }
 }
 
 .input-wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
+
   .project__input {
     width: 48%;
   }
