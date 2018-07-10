@@ -90,7 +90,7 @@ $(document).ready(function () {
             thumbnailBorderHorizontal: 0,
             thumbnailBorderVertical: 0,
             thumbnailDisplayTransition: 'scaleUp',
-            thumbnailDisplayTransitionDuration: 1000,
+            thumbnailDisplayTransitionDuration: 500,
             thumbnailLabel: {
                 display: false
             },
@@ -130,6 +130,13 @@ $(document).ready(function () {
             type: 'bullets',
             clickable: true
         }
+    });
+
+    //----------------------<<form validate>>----------------------\\
+    $.validate({
+        scrollToTopOnError: false,
+        validateOnBlur : false,
+        errorMessagePosition : 'top'
     });
 
 });

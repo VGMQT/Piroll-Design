@@ -19,6 +19,7 @@
 
   .btn {
     padding: rem(20px) rem(35px);
+    margin-bottom: rem(20px);
     outline: none;
     border: none;
     color: $bg-color;
@@ -47,13 +48,18 @@
 
 .project__input {
   @include font(reg);
+  @include trans();
   display: block;
   width: 100%;
   padding: rem(20px);
   margin-bottom: rem(30px);
   font-size: rem(15px);
   outline: none;
-  border: none;
+  border: 1px solid transparent;
   color: $desc-color;
   background: $bg-color;
+
+  &:focus {
+    border-color: $accentcolor;
+  }
 }
