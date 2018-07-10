@@ -18,22 +18,19 @@
 
 .btn {
   @include font();
-  display: inline-block;
-  font-size: rem(12px);
+  @include trans();
+  display: block;
+  padding: rem(20px) rem(45px);
   text-transform: uppercase;
+  font-size: rem(12px);
+  color: #ffffff;
   background: $title;
-  transition: all .3s;
+
   &:hover {
     background: $accentcolor;
   }
+
   &:active {
     transform: scale(.98);
   }
-}
-
-.btn__link {
-  display: block;
-  padding: rem(20px) rem(45px);
-  color: #ffffff;
-  transition: all .3s;
 }

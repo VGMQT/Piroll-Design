@@ -1,9 +1,11 @@
 .project {
   background: $prosbg;
-  .desc {
-    max-width: rem(600px);
-    padding-bottom: rem(35px);
-    margin: auto;
+  .container {
+    .desc {
+      max-width: rem(600px);
+      padding-bottom: rem(35px);
+      margin: auto;
+    }
   }
 }
 
