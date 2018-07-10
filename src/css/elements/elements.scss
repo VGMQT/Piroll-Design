@@ -7,7 +7,7 @@
   @include font();
   margin-bottom: rem(20px);
   font-size: rem(30px);
-  color: #000000;
+  color: $title;
 }
 
 .desc {
@@ -23,7 +23,7 @@
   padding: rem(20px) rem(45px);
   text-transform: uppercase;
   font-size: rem(12px);
-  color: #ffffff;
+  color: $bg-color;
   background: $title;
 
   &:hover {

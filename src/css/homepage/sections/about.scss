@@ -6,13 +6,12 @@
 .about__text-content {
   display: inline-block;
   max-width: rem(590px);
+
   .desc {
     margin-bottom: rem(30px);
     font-size: rem(16px);
   }
-}
 
-.signature {
   img {
     display: inline-block;
     max-width: 100%;
@@ -24,15 +23,11 @@
 .about__skills {
   background: url("../assets/img/bg/bg-about-skills.jpg") center no-repeat fixed;
   background-size: cover;
-  .container {
-    display: flex;
-  }
 }
 
 .about__skills-content {
   width: 50%;
   padding: rem(90px) 0;
-  text-align: center;
 }
 
 
@@ -47,7 +42,8 @@
   position: relative;
   margin-bottom: rem(20px);
   font-size: rem(12px);
-  color: #000000;
+  color: $title;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -71,7 +67,8 @@
 .skills__progress {
   width: 100%;
   height: 3px;
-  background-color: #d8d8d8;
+  background-color: $skillsbarbg;
+
   div {
     height: 3px;
     background-color: $accentcolor;
@@ -89,7 +86,7 @@
   display: flex;
   justify-content: space-around;
   text-align: left;
-  color: #ffffff;
+  color: $bg-color;
 }
 
 .numbers__item {
@@ -121,11 +118,12 @@
 
 //----------------------<<portfolio>>----------------------\\
 .portfolio__svg {
+  @include trans();
   display: block;
   width: rem(80px);
   height: rem(80px);
   fill: #ffffff;
-  transition: all .3s;
+
   &:hover {
     fill: $accentcolor;
   }
@@ -137,11 +135,11 @@
 }
 
 .portfolio__svg-moreBtn {
+  @include trans();
   display: inline-block;
   vertical-align: middle;
   padding-bottom: rem(3px);
   width: rem(25px);
   height: rem(25px);
   fill: #8e8e8e;
-  transition: all .3s;
 }
