@@ -1,0 +1,139 @@
+//----------------------<<preview>>----------------------\\
+.preview {
+  display: flex;
+}
+
+.preview__text {
+  width: 50%;
+  padding: rem(100px);
+  margin-right: auto;
+
+  .desc {
+    padding-bottom: rem(20px);
+    font-size: rem(16px);
+  }
+}
+
+.preview__item {
+  @include font(reg);
+  padding-bottom: rem(15px);
+  font-size: rem(16px);
+  color: $desc-color;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  span {
+    &:first-child {
+      @include font(medium);
+      margin-right: rem(5px);
+      color: $title;
+    }
+
+    a {
+      @include trans();
+      color: $accentcolor;
+
+      &:hover {
+        color: $title;
+      }
+
+      &:active {
+        color: rgba($title, .5);
+      }
+    }
+  }
+}
+
+.preview__bg {
+  width: 50%;
+  margin-left: auto;
+  background: url("../assets/img/project-page/breakfast.jpg") bottom no-repeat;
+  background-size: cover;
+}
+
+//----------------------<<controls>>----------------------\\
+.controls {
+  @include font(medium);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(40px) 0;
+  text-transform: uppercase;
+  font-size: rem(12px);
+}
+
+.controls__prev,
+.controls__next {
+  display: block;
+  color: $title;
+
+  &:hover {
+    .controls__svg {
+      fill: $accentcolor;
+    }
+
+    span {
+      color: $accentcolor;
+    }
+  }
+
+  &:active {
+    .controls__svg {
+      fill: rgba($title, .5);
+    }
+
+    span {
+      color: rgba($title, .5);
+    }
+  }
+
+  span {
+    @include trans();
+  }
+}
+
+.controls__menu-btn {
+  @include trans();
+  display: block;
+  width: rem(30px);
+  height: rem(30px);
+  fill: $title;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+    fill: $accentcolor;
+  }
+
+  &:active {
+    transform: scale(.98);
+    fill: rgba($title, .5);
+  }
+}
+
+.controls__svg {
+  @include trans();
+  width: rem(9px);
+  height: rem(9px);
+  fill: $title;
+  cursor: pointer;
+}
+
+.controls__svg_ml {
+  margin-left: rem(10px);
+}
+
+.controls__svg_mr {
+  margin-right: rem(10px);
+}
+
+//----------------------<<project menu>>----------------------\\
+.project-menu {
+  height: 0;
+}
+
+.hide-btn {
+  display: none;
+}

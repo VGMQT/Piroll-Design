@@ -36,14 +36,16 @@ $(document).ready(function () {
 
     //----------------------<<parallax>>----------------------\\
     function parallax() {
-        var $parallax = document.getElementById("parallax");
+        const $parallax = document.getElementById("parallax");
 
-        var yPos = window.pageYOffset / $parallax.dataset.speed;
-        yPos = -yPos;
+        if($parallax){
+            let yPos = window.pageYOffset / $parallax.dataset.speed;
+            yPos = -yPos;
 
-        var coords = '0% '+ yPos + 'px';
+            let coords = '0% '+ yPos + 'px';
 
-        $parallax.style.backgroundPosition = coords;
+            $parallax.style.backgroundPosition = coords;
+        }
     }
 
     window.addEventListener("scroll", function(){
@@ -138,5 +140,68 @@ $(document).ready(function () {
         validateOnBlur : false,
         errorMessagePosition : 'top'
     });
+
+    //----------------------<<project menu>>----------------------\\
+
+    //debounce script
+    (function($) {
+
+        const debounce = (callback, delay) => {
+            let timeout;
+            return function(...array) {
+
+                timeout = clearTimeout(timeout, array);
+                timeout = setTimeout(() => {
+                    callback.apply(this, array);
+                    timeout = 0;
+                }, delay);
+
+                return this;
+            };
+        };
+
+        $.extend($.fn, {
+            debounce: function(event, callback, delay) {
+                this.bind(event, debounce.apply(this, [callback, delay]));
+            }
+        });
+    })(jQuery);
+
+    //menu script
+    $('.menu-switch').debounce('click', function (e) {
+        e.preventDefault();
+
+        var
+            $this = $(this),
+            menu = $('.project-menu'),
+            btnShow = $('.show-btn'),
+            btnHide = $('.hide-btn'),
+            duration = 10000;
+
+        if(!$this.hasClass('pressed')) {
+
+            $this.addClass('pressed');
+
+            menu.animate({
+                height : 900
+            }, duration);
+
+            btnShow.fadeOut(duration, function () {
+                btnHide.fadeIn(duration);
+            });
+
+        } else {
+
+            $this.removeClass('pressed');
+
+            menu.animate({
+                height: 0
+            }, duration);
+
+            btnHide.fadeOut(duration, function () {
+                btnShow.fadeIn(duration);
+            });
+        }
+    }, 200);
 
 });
