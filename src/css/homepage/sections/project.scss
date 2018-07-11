@@ -17,20 +17,6 @@
   width: rem(700px);
   margin: auto;
 
-  .btn {
-    padding: rem(20px) rem(35px);
-    margin-bottom: rem(20px);
-    outline: none;
-    border: none;
-    color: $bg-color;
-    background: $accentcolor;
-    cursor: pointer;
-
-    &:hover {
-      background: $title;
-    }
-  }
-
   textarea {
     min-height: rem(200px);
   }

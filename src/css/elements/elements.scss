@@ -23,6 +23,10 @@
   @include font(reg);
   font-size: rem(18px);
   color: $desc-color;
+
+  p {
+    padding-bottom: rem(20px);
+  }
 }
 
 .btn {
@@ -41,5 +45,19 @@
 
   &:active {
     transform: scale(.98);
+  }
+}
+
+.btn_color {
+  padding: rem(20px) rem(35px);
+  margin-bottom: rem(20px);
+  outline: none;
+  border: none;
+  color: $bg-color;
+  background: $accentcolor;
+  cursor: pointer;
+
+  &:hover {
+    background: $title;
   }
 }
