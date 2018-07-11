@@ -11,6 +11,8 @@
 
 .home-portfolio {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .home-portfolio__link {
@@ -19,15 +21,47 @@
   width: rem(300px);
   height: rem(300px);
 
-  img {
-    @extend %img;
+  &:after {
+    @include  trans();
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba($accentcolor, .6);
+    opacity: 0;
+    content: "";
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+
+    .home-portfolio__svg {
+      opacity: 1;
+    }
+  }
+
+  img {
+    display: block;
+    width: rem(300px);
+    height: rem(300px);
+    object-fit: cover;
   }
 }
 
 .home-portfolio__svg {
-  display: none;
+  @include trans();
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: block;
+  width: rem(50px);
+  height: rem(50px);
+  fill: $bg-color;
+  opacity: 0;
 }
