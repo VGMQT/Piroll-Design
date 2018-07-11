@@ -3,6 +3,15 @@
   text-align: center;
 }
 
+.text-wrapper {
+  padding: rem(120px) 0;
+
+  .desc {
+    max-width: rem(520px);
+    margin: auto;
+  }
+}
+
 .title {
   @include font();
   margin-bottom: rem(20px);
