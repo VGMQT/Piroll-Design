@@ -1,10 +1,11 @@
 .contact {
+  padding: rem(100px) 0;
   background: $prosbg;
 }
 
 .contact__info {
   display: flex;
-  padding: rem(100px) 0;
+  margin-bottom: rem(100px);
 
   .form {
     width: 60%;
@@ -24,5 +25,4 @@
 .map {
   width: 100%;
   height: rem(500px);
-  margin-bottom: rem(100px);
 }
