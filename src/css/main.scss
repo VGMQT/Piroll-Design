@@ -13,22 +13,18 @@
 //----------------------<<elements>>----------------------\\
 @import "elements/elements";
 
-//----------------------<<sections>>----------------------\\
+//----------------------<<includes>>----------------------\\
 @import "includes/header";
+@import "includes/footer";
+
+//----------------------<<homepage sections>>----------------------\\
 @import "homepage/sections/intro";
 @import "homepage/sections/about";
 @import "homepage/sections/process";
 @import "homepage/sections/project";
-@import "includes/footer";
 
-//----------------------<<home>>----------------------\\
-@import "home/home main";
-
-//----------------------<<about>>----------------------\\
-@import "about/about";
-
-//----------------------<<project>>----------------------\\
-@import "project/project";
-
-//----------------------<<contact>>----------------------\\
-@import "contact/contact";
+//----------------------<<pages>>----------------------\\
+@import "pages/portfolio";
+@import "pages/aboutme";
+@import "pages/project";
+@import "pages/contact";

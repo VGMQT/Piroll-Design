@@ -44,6 +44,12 @@
     }
   }
 
+  &:active {
+    .home-portfolio__svg {
+      opacity: 0;
+    }
+  }
+
   img {
     display: block;
     width: rem(300px);
