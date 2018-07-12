@@ -143,7 +143,7 @@ $(document).ready(function () {
 
     //----------------------<<project menu>>----------------------\\
 
-    //debounce script
+    // debounce script
     (function($) {
 
         const debounce = (callback, delay) => {
@@ -171,12 +171,12 @@ $(document).ready(function () {
     $('.menu-switch').debounce('click', function (e) {
         e.preventDefault();
 
-        var
+        const
             $this = $(this),
             menu = $('.project-menu'),
             btnShow = $('.show-btn'),
             btnHide = $('.hide-btn'),
-            duration = 10000;
+            duration = 500;
 
         if(!$this.hasClass('pressed')) {
 
@@ -203,5 +203,93 @@ $(document).ready(function () {
             });
         }
     }, 200);
+
+    // document.getElementById("menuSwitch").addEventListener("click", function(e) {
+    //
+    //     const target = e.currentTarget;
+    //
+    //     e.preventDefault();
+    //
+    //     const parent = target.closest(".container");
+    //     const content = parent.querySelectorAll(".project-menu")[0];
+    //     const menuBtn = document.getElementById('menuBtn');
+    //     const hideBtn = document.getElementById('hideBtn');
+    //
+    //     // let tabIndex = target.dataset.tab;
+    //
+    //     // for (let cont = 0; cont < content.length; cont++) {
+    //     //     content[cont].style.display = "none";
+    //     // }
+    //
+    //     // for (let tab = 0; tab < tabBtns.length; tab++) {
+    //     //     tabBtns[tab].className = tabBtns[tab].className.replace(" active", "");
+    //     // }
+    //
+    //     // content[tabIndex].style.display = "block";
+    //     // tabBtns[tabIndex].className += " active";
+    //
+    //
+    //     if(!target.matches(".pressed")){
+    //
+    //         target.className += " pressed";
+    //
+    //
+    //         // content.style.animationIterationCount = "1";
+    //
+    //         // menuBtn.style.animationIterationCount = "1";
+    //         //
+    //         // menuBtn.addEventListener("animationend", function () {
+    //         //     menuBtn.style.opacity = "0";
+    //         //     menuBtn.style.display = "none";
+    //         //     hideBtn.style.display = "block";
+    //         //     hideBtn.style.animationIterationCount = "1";
+    //         // });
+    //         //
+    //         // hideBtn.addEventListener("animationend", function () {
+    //         //     hideBtn.style.opacity = "1";
+    //         // });
+    //
+    //         // content.addEventListener("animationend", function () {
+    //         //     content.style.height = "900px";
+    //         // });
+    //
+    //         $('.project-menu').animate({
+    //             height : 900
+    //         }, 800);
+    //
+    //         $("#menuBtn").fadeOut(2000);
+    //     } else {
+    //
+    //         target.classList.remove("pressed");
+    //
+    //         // hideBtn.style.animationName = "fadeOut";
+    //         // hideBtn.style.animationDirection = "reverse";
+    //         // console.log(hideBtn);
+    //         // hideBtn.style.animationDuration = "3s";
+    //         // hideBtn.style.animationIterationCount = "1";
+    //         //
+    //         // hideBtn.addEventListener("animationend", function () {
+    //         //     hideBtn.style.display = "none";
+    //         //     menuBtn.style.display = "block";
+    //         //     menuBtn.style.animationDirection = "reverse";
+    //         //     menuBtn.style.animationDuration = "1s";
+    //         //     menuBtn.style.animationIterationCount = "1";
+    //         // });
+    //         //
+    //         // menuBtn.addEventListener("animationend", function () {
+    //         //     menuBtn.style.opacity = "1";
+    //         //     menuBtn.style.animationIterationCount = "0";
+    //         //     hideBtn.style.animationIterationCount = "0";
+    //         // });
+    //
+    //         // content.addEventListener("animationend", function () {
+    //         //     content.style.height = "900px";
+    //         // });
+    //
+    //         $('.project-menu').animate({
+    //             height : 0
+    //         }, 800);
+    //     }
+    // });
 
 });
