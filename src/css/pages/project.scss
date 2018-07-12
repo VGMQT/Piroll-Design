@@ -59,6 +59,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: rem(120px);
   padding: rem(40px) 0;
   text-transform: uppercase;
   font-size: rem(12px);
@@ -95,7 +96,6 @@
 }
 
 .controls__menu-btn {
-  @include trans();
   display: block;
   width: rem(30px);
   height: rem(30px);
@@ -103,12 +103,11 @@
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.2);
     fill: $accentcolor;
   }
 
   &:active {
-    transform: scale(.98);
+    fill: rgba($accentcolor, .5);
   }
 }
 
@@ -135,21 +134,13 @@
 
 .menu-switch {
   display: block;
+  outline: none;
+  border: none;
+  background: none;
 }
 
 .hide-btn {
   display: none;
-  //animation-name: fadeIn;
-  //animation-duration: 1s;
-  //animation-timing-function: linear;
-  //animation-iteration-count: 0;
-}
-
-.show-btn {
-  //animation-name: fadeOut;
-  //animation-duration: 3s;
-  //animation-timing-function: linear;
-  //animation-iteration-count: 0;
 }
 
 @keyframes fadeOut {

@@ -185,7 +185,7 @@ $(document).ready(function () {
     //----------------------<<project menu>>----------------------\\
 
     // debounce script
-    (function($) {
+    // (function($) {
 
         const debounce = (callback, delay) => {
             let timeout;
@@ -206,7 +206,7 @@ $(document).ready(function () {
                 this.bind(event, debounce.apply(this, [callback, delay]));
             }
         });
-    })(jQuery);
+    // })(jQuery);
 
     //menu script
     $('.menu-switch').debounce('click', function (e) {
