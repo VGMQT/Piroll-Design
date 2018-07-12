@@ -1,0 +1,28 @@
+.contact {
+  background: $prosbg;
+}
+
+.contact__info {
+  display: flex;
+  padding: rem(100px) 0;
+
+  .form {
+    width: 60%;
+    align-items: flex-start;
+  }
+}
+
+.contact__text {
+  width: 40%;
+  .desc {
+    max-width: rem(370px);
+    padding-bottom: rem(30px);
+    font-size: rem(16px);
+  }
+}
+
+.map {
+  width: 100%;
+  height: rem(500px);
+  margin-bottom: rem(100px);
+}

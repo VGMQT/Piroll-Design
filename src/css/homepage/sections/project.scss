@@ -10,7 +10,7 @@
   }
 }
 
-.form-project {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,12 +27,12 @@
   justify-content: space-between;
   width: 100%;
 
-  .project__input {
+  .input {
     width: 48%;
   }
 }
 
-.project__input {
+.input {
   @include font(reg);
   @include trans();
   display: block;

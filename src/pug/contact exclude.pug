@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+include includes/head
+<body>
+<div class="wrapper">
+    include includes/header
+    <main class="main contact">
+        <div class="container">
+            <div class="contact__info">
+                <div class="contact__text">
+                    <h1 class="title">Contact info:</h1>
+                    <div class="desc">
+                        <p>
+                            |   To give give beginning divide, cattle. Give moving
+                            |   won't, there the abundantly she'd she'd brought air
+                            |   upon. Light hath subdue. Life days creature upon
+                            |   first heaven gathering dry.
+                        </p>
+                    </div>
+                    <ul class="preview__info">
+                        <li class="preview__item">
+                            <span>Address:</span>
+                            <span>10111 Santa Monica Boulevard, LA</span>
+                        </li>
+                        <li class="preview__item">
+                            <span>Phone:</span>
+                            <span><a href="tel:+44 987 065 908">+44 987 065 908</a></span>
+                        </li>
+                        <li class="preview__item">
+                            <span>Email:</span>
+                            <span><a href="mailto:info@Example.com">info@Example.com</a></span>
+                        </li>
+                        <li class="preview__item">
+                            <span>Fax:</span>
+                            <span><a href="tel:+44 987 065 909">+44 987 065 909</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <form action="#" method="get" class="form">
+                    <div class="input-wrapper">
+                        <input name="yourName" class="input" type="text" placeholder="Your Name">
+                        <input data-validation="email" name="yourEmail" class="input" type="email" placeholder="Your Email">
+                    </div>
+                    <input data-validation="length" data-validation-length="min4" class="input" type="text" placeholder="Your Title">
+                    <textarea name="yourComment" class="input" placeholder="Your Comment"></textarea>
+                    <button class="btn btn_color" type="submit">Send Message</button>
+                </form>
+            </div>
+            <div id="map" class="map"></div>
+        </div>
+    </main>
+</div>
+include includes/footer
+
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js js/main.min.js -->
+<script src="js/ugly/main.min.js"></script>
+<!-- endbuild -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAegz7fGIWTKx8FfAUDCnRTqM0K02uOX3w&callback=initMap" async defer></script>
+
+</body>
+</html>
