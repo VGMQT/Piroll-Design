@@ -1,0 +1,39 @@
+.numbers {
+  padding: rem(90px) 0;
+  background: $accentcolor;
+}
+
+.numbers__list {
+  @include font(medium);
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  color: $bg-color;
+}
+
+.numbers__item {
+  display: flex;
+  align-items: center;
+}
+
+.numbers__icon {
+  width: rem(40px);
+  height: rem(40px);
+  margin-right: rem(20px);
+}
+
+.numbers__svg {
+  width: 100%;
+  height: 100%;
+  fill: #ffffff;
+}
+
+.numbers__total {
+  font-size: rem(18px);
+}
+
+.numbers__desc {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: rem(12px);
+}

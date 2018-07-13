@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: rem(700px);
+  margin: auto;
+
+  textarea {
+    min-height: rem(200px);
+  }
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .input {
+    width: 48%;
+  }
+}
+
+.input {
+  @include font(reg);
+  @include trans();
+  display: block;
+  width: 100%;
+  padding: rem(20px);
+  margin-bottom: rem(30px);
+  font-size: rem(15px);
+  outline: none;
+  border: 1px solid transparent;
+  color: $desc-color;
+  background: $bg-color;
+
+  &:focus {
+    border-color: $accentcolor;
+  }
+}

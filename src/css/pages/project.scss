@@ -101,12 +101,15 @@
   height: rem(30px);
   fill: $title;
   cursor: pointer;
+  transition: fill .3s, transform .3s;
 
   &:hover {
+    transform: scale(1.2);
     fill: $accentcolor;
   }
 
   &:active {
+    transform: scale(.98);
     fill: rgba($accentcolor, .5);
   }
 }
