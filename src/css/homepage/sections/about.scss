@@ -90,7 +90,7 @@
 }
 
 //----------------------<<portfolio>>----------------------\\
-.portfolio__svg {
+.gallery__svg {
   @include trans();
   display: block;
   width: rem(80px);
@@ -102,12 +102,12 @@
   }
 }
 
-.portfolio__svg_size {
+.gallery__svg_size {
   width: rem(50px);
   height: rem(40px);
 }
 
-.portfolio__svg-moreBtn {
+.gallery__svg-moreBtn {
   @include trans();
   display: inline-block;
   vertical-align: middle;
