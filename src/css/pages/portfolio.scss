@@ -9,13 +9,13 @@
   text-align: center;
 }
 
-.home-portfolio {
+.portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.home-portfolio__link {
+.portfolio__link {
   position: relative;
   display: block;
   width: rem(300px);
@@ -39,13 +39,13 @@
       opacity: 1;
     }
 
-    .home-portfolio__svg {
+    .portfolio__svg {
       opacity: 1;
     }
   }
 
   &:active {
-    .home-portfolio__svg {
+    .portfolio__svg {
       opacity: 0;
     }
   }
@@ -58,7 +58,7 @@
   }
 }
 
-.home-portfolio__svg {
+.portfolio__svg {
   @include trans();
   position: absolute;
   top: 50%;
