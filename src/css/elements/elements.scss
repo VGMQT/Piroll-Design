@@ -70,3 +70,35 @@
     background: $title;
   }
 }
+
+.list__item {
+  @include font(reg);
+  padding-bottom: rem(15px);
+  font-size: rem(16px);
+  color: $desc-color;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  span {
+    &:first-child {
+      @include font(medium);
+      margin-right: rem(5px);
+      color: $title;
+    }
+
+    a {
+      @include trans();
+      color: $accentcolor;
+
+      &:hover {
+        color: $title;
+      }
+
+      &:active {
+        color: rgba($title, .5);
+      }
+    }
+  }
+}
