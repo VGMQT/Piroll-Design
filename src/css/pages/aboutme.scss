@@ -30,6 +30,10 @@
 .aboutme {
   .container {
     display: flex;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 }
 
@@ -42,12 +46,21 @@
     height: 100%;
     object-fit: cover;
   }
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .aboutme__text-wrapper {
   width: 50%;
-  padding: rem(140px) 0;
+  padding: rem(140px) rem(40px);
   margin-left: auto;
+
+  @include tablet {
+    width: 100%;
+    padding: rem(40px);
+  }
 }
 
 .aboutme__text {
