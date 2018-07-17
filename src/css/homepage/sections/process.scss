@@ -81,6 +81,10 @@
     text-transform: uppercase;
     font-size: rem(12px);
   }
+
+  @include laptop {
+    width: rem(650px);
+  }
 }
 
 //----------------------<<logos>>----------------------\\

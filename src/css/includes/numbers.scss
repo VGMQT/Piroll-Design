@@ -30,10 +30,18 @@
 
 .numbers__total {
   font-size: rem(18px);
+
+  @include laptop {
+    padding-bottom: rem(5px);
+  }
 }
 
 .numbers__desc {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: rem(12px);
+
+  @include laptop {
+    line-height: 1.5;
+  }
 }

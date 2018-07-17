@@ -43,6 +43,10 @@
 .swiper-container {
   width: 100%;
   height: rem(500px);
+
+  @include laptop {
+    height: rem(600px);
+  }
 }
 
 .swiper-slide {
