@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   margin-bottom: rem(200px);
 
@@ -37,6 +37,9 @@
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 85%;
 
   .active {
     color: $accentcolor;
@@ -48,13 +51,10 @@
   @include trans();
   display: block;
   margin-right: rem(30px);
+  margin-bottom: rem(20px);
   text-transform: uppercase;
   font-size: rem(12px);
   color: $title;
-
-  &:last-child {
-    margin-right: 0;
-  }
 
   &:hover {
     transform: rotate(15deg);

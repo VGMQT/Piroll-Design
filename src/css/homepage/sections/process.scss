@@ -24,6 +24,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
+
+  @include mobile {
+    justify-content: center;
+  }
 }
 
 .pros__item {
@@ -87,6 +91,14 @@
   }
   @include tablet {
     width: rem(450px);
+  }
+
+  @include mobile {
+    width: rem(300px);
+
+    p {
+      font-size: rem(20px);
+    }
   }
 }
 

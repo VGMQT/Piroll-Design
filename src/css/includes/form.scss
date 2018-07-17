@@ -12,6 +12,10 @@
   @include tablet {
     width: rem(450px);
   }
+
+  @include mobile {
+    width: rem(320px);
+  }
 }
 
 .input-wrapper {
@@ -21,6 +25,14 @@
 
   .input {
     width: 48%;
+  }
+
+  @include mobile {
+    flex-direction: column;
+
+    .input {
+      width: 100%;
+    }
   }
 }
 

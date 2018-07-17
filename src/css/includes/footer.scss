@@ -11,6 +11,9 @@
     @include tablet {
       flex-wrap: wrap;
     }
+
+    @include mobile {
+    }
   }
 
   @include tablet {
@@ -48,6 +51,10 @@
 
 .footer__menu {
   display: flex;
+
+  @include mobile {
+    margin-bottom: rem(20px);
+  }
 }
 
 .footer__list {
