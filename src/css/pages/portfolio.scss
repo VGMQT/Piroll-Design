@@ -13,6 +13,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+
+  @include desktop {
+    justify-content: center;
+  }
 }
 
 .portfolio__link {
