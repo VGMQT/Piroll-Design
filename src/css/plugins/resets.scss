@@ -47,6 +47,9 @@
   @include laptop {
     height: rem(600px);
   }
+  @include tablet {
+    height: rem(700px);
+  }
 }
 
 .swiper-slide {

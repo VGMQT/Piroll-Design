@@ -7,6 +7,14 @@
   .container {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  @include tablet {
+    padding: rem(50px) 0;
   }
 }
 
@@ -17,6 +25,10 @@
 
   p {
     max-width: rem(245px);
+  }
+
+  @include tablet {
+    margin-bottom: rem(20px);
   }
 }
 

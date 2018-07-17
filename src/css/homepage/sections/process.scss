@@ -85,6 +85,9 @@
   @include laptop {
     width: rem(650px);
   }
+  @include tablet {
+    width: rem(450px);
+  }
 }
 
 //----------------------<<logos>>----------------------\\
@@ -93,6 +96,10 @@
   justify-content: space-around;
   align-items: center;
   padding: rem(60px) 0;
+
+  @include tablet {
+    flex-wrap: wrap;
+  }
 }
 
 .logos__link {
@@ -106,5 +113,9 @@
 
   img {
     @extend %img;
+  }
+
+  @include tablet {
+    margin-bottom: rem(20px);
   }
 }

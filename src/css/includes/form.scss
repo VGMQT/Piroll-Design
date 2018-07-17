@@ -8,6 +8,10 @@
   textarea {
     min-height: rem(200px);
   }
+
+  @include tablet {
+    width: rem(450px);
+  }
 }
 
 .input-wrapper {

@@ -38,6 +38,10 @@
 .about__skills-content {
   width: 50%;
   padding: rem(90px) 0;
+
+  @include tablet {
+    width: 70%;
+  }
 }
 
 .skills-wrapper {
