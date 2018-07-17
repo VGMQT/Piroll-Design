@@ -11,14 +11,28 @@
     width: 60%;
     align-items: flex-start;
   }
+
+  @include tablet {
+    flex-direction: column;
+
+    .form {
+      width: 100%;
+    }
+  }
 }
 
 .contact__text {
   width: 40%;
+  padding: 0 rem(40px);
   .desc {
     max-width: rem(370px);
     padding-bottom: rem(30px);
     font-size: rem(16px);
+  }
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: rem(40px);
   }
 }
 
