@@ -1,6 +1,10 @@
 //----------------------<<preview>>----------------------\\
 .preview {
   display: flex;
+
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 .preview__text {
@@ -12,6 +16,14 @@
     padding-bottom: rem(20px);
     font-size: rem(16px);
   }
+
+  @include desktop {
+    padding: rem(100px) rem(40px);
+  }
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .preview__bg {
@@ -19,6 +31,11 @@
   margin-left: auto;
   background: url("../assets/img/project-page/breakfast.jpg") bottom no-repeat;
   background-size: cover;
+
+  @include tablet {
+    width: 100%;
+    height: rem(400px);
+  }
 }
 
 //----------------------<<controls>>----------------------\\

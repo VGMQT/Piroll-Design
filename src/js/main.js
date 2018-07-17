@@ -224,9 +224,23 @@ $(document).ready(function () {
 
             $this.addClass('pressed');
 
-            menu.animate({
-                height : 900
-            }, duration);
+            if(window.matchMedia("(min-width: 990px)").matches){
+                menu.animate({
+                    height : 900
+                }, duration);
+            } else if(window.matchMedia("(min-width: 770px)").matches){
+                menu.animate({
+                    height : 1400
+                }, duration);
+            } else if(window.matchMedia("(min-width: 480px)").matches){
+                menu.animate({
+                    height : 3150
+                }, duration);
+            } else {
+                menu.animate({
+                    height : 2700
+                }, duration);
+            }
 
             btnShow.fadeOut(duration, function () {
                 btnHide.fadeIn(duration);
